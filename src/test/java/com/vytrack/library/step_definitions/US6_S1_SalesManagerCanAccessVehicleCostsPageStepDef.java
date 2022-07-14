@@ -27,6 +27,9 @@ public class US6_S1_SalesManagerCanAccessVehicleCostsPageStepDef {
 
     @When("the user hovers with the mouse over the Fleet button")
     public void theUserHoversWithTheMouseOverTheFleetButton() {
+
+        us6_page.fleetBtn.click();
+
     }
 
     @When("the user clicks on the Vehicle Costs button")
