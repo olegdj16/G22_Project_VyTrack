@@ -18,7 +18,7 @@ public class LoginPage {
     @FindBy(xpath = "//input[@name='_password']")
     public WebElement passwordInput;
 
-    @FindBy(xpath = "_submit")
+    @FindBy(xpath = "//button[@name='_submit']")
     public WebElement submitButton;
 
     // No page elements added
