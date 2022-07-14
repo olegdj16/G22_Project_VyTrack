@@ -12,16 +12,4 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
-
-    @FindBy(xpath = "//span[.='Dashboard']")
-    public WebElement dashboardLink;
-
-    @FindBy(xpath = "//span[.='Users']")
-    public WebElement userLink;
-
-    @FindBy(xpath = "//span[.='Books']")
-    public WebElement booksLink;
-
-    @FindBy(id = "navbarDropdown")
-    public WebElement userNameLink;
 }
