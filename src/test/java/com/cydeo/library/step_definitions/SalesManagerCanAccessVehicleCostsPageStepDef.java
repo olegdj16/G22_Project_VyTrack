@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class UserVerifiesVehicleAllCosts {
+public class SalesManagerCanAccessVehicleCostsPageStepDef {
 
 
     LoginPage loginPage = new LoginPage();
