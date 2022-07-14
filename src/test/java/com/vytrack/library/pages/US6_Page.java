@@ -17,7 +17,7 @@ public class US6_Page {
     public WebElement allVehicleCostBtn;
 
     @FindBy(css = "h1[class='oro-subtitle']")
-    public WebElement titleDashboard;
+    public WebElement titleAllVehicleCosts;
 
     public US6_Page() {
         PageFactory.initElements(Driver.getDriver(), this);

@@ -26,22 +26,27 @@ public class US6_S1_SalesManagerCanAccessVehicleCostsPageStepDef {
     }
 
     @When("the user hovers with the mouse over the Fleet button")
-    public void theUserHoversWithTheMouseOverTheFleetButton() {
+    public void theUserHoversWithTheMouseOverTheFleetButton() throws InterruptedException {
 
+        Thread.sleep(3000);
         us6_page.fleetBtn.click();
 
     }
 
     @When("the user clicks on the Vehicle Costs button")
-    public void the_user_clicks_on_the_vehicle_costs_button(){
-
+    public void the_user_clicks_on_the_vehicle_costs_button() throws InterruptedException {
+        Thread.sleep(3000);
         us6_page.vehicleCostBtn.click();
     }
 
     @Then("the user should be able to see the Vehicle Costs page")
     public void the_user_should_be_able_to_see_the_vehicle_costs_page() {
-        String actual = us6_page.titleDashboard.getText();
-        String expected = "All Vehicle Costs";
-        Assert.assertEquals(actual,expected);
+
+        String expected = "All - Vehicle Costs - Entities - System - Car - Entities - System";
+
+        String actual = Driver.getDriver().getTitle();
+//        String actual = us6_page.titleAllVehicleCosts.getText();
+
+        Assert.assertEquals(expected,actual);
     }
 }
