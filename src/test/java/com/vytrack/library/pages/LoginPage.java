@@ -12,13 +12,13 @@ import org.openqa.selenium.support.PageFactory;
 // ************* do not make any changes to this file ******************
 public class LoginPage {
 
-    @FindBy(xpath = "//*[@id='prependedInput']")
+    @FindBy(xpath = "//input[@name='_username']")
     public WebElement usernameInput;
 
-    @FindBy(xpath = "//*[@id='prependedInput2']")
+    @FindBy(xpath = "//input[@name='_password']")
     public WebElement passwordInput;
 
-    @FindBy(xpath = "//*[@id='_submit']")
+    @FindBy(xpath = "_submit")
     public WebElement submitButton;
 
     // No page elements added
