@@ -6,6 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 // page_url = https://qa2.vytrack.com/user/login
+
+
+
+// ************* do not make any changes to this file ******************
 public class LoginPage {
 
     @FindBy(xpath = "//*[@id='prependedInput']")
